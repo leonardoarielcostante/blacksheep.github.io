@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navSuperior {
+    font-family: 'Lobster', cursive;
+    height: 40vh;
+    position: relative;
+}
+
+.imgSuperior {
+    height: 40vh;
+    position: absolute;
+    object-fit: fill;
+    width: 100%;
+}
+
+.divContenedor {
+    height: 40vh;
+    position: absolute;
+}
+
+.button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#navbar-scroll {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    transition: all ease .45s;
+    transform: translateY(-100%);
+}
+
+.scroll {
+    transform: translateY(0%) !important;
+}
+
+
+.centro {
+    height: 60vh;
+}
+
+.foto-carrousel {
+    object-fit: cover;
+    opacity: 0.4;
+    height: 60vh;
+}
+
+.contenedor-carrousel{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}
+
+.contenedor-frases {
+    overflow: hidden;
+}
+
+.div-clases {
+    height: 60vh;
+}
+
+.frases {
+    position: relative;
+    font-family: 'Lobster', cursive;
+    font-size: 3em !important;
+    font-weight: bold;
+    display: none;
+}
+
+.text-in {
+    display: flex;
+    animation: textIn .5s ease;
+}
+
+
+.menu {
+    height: 100vh;
+    background: rgb(203,99,81);
+    background: linear-gradient(135deg, rgba(203,99,81,1) 11%, rgba(203,109,81,1) 35%, rgba(0,0,0,0.8547794117647058) 83%);
+    background-size: 220% 220%;
+    animation: fondoAnimado 30s ease-in infinite;
+    padding: 100px 0px;
+}
+
+.card {
+    height: fit-content;
+    background-color: wheat;
+    font-family: 'Lobster', cursive;
+    box-shadow: 0 0 10px 5px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+}
+
+.botonesCartas {
+    width: 10em;
+    font-size: 1.5em;
+    color: #CB6D51;
+}
+
+.footer {
+    background-color: wheat;
+}
+
+.contacto {
+    font-size: 1.2em;
+    font-family: 'Lobster', cursive;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+
+@keyframes textIn{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fondoAnimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .nav-link {
+        display: inline;
+    }
+
+    .navbar-nav {
+        align-items: end;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 5px;
+    }
+
+    .card img {
+        height: 200px !important;
+    }
+
+    .frases {
+        font-size: 2em !important;
+    }
+
+}
+
